@@ -1,7 +1,7 @@
 # DCGAN python实现
 
 这是一个基于 PyTorch 的深度卷积生成对抗网络（DCGAN）实现。该代码遵循了原始 DCGAN 论文中的架构，并允许你在自己的数据集上训练 GAN。
-这个项目基于基于https://github.com/pytorch/examples/tree/main/dcgan 并进行改进。
+这个项目基于https://github.com/pytorch/examples/tree/main/dcgan 并进行改进。
 
 ## 功能特点
 - **数据增强：** 自定义裁剪和填充图像为正方形进行训练。
@@ -40,3 +40,7 @@
 - 图像裁剪：CustomCrop 类用于将图像裁剪为正方形，通过剪掉较长边的一部分。如果你想修改裁剪比例或禁用此功能，可以修改该类。
 
 - 填充：图像在缩放前会被填充为正方形。如果你希望修改填充行为，可以调整 pad_to_square() 函数。
+
+</br>
+注：WGAN-GP与本仓库的DCGAN具有更好的稳定性和优秀的生成质量，在这里放一个WGAN-GP例子。
+https://github.com/bigBulen/WGAN-GP
